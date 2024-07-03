@@ -10,7 +10,7 @@ pipeline {
     }
     stage('SonarQube Analysis') {
       environment {
-        scannerHome = tool 'SQ-JenkinsTest'
+        scannerHome = tool 'SQ-Jenkins-Test'
       }
         steps {
             withSonarQubeEnv('instance-student8-jenkins') {        
